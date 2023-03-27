@@ -1,4 +1,4 @@
-# Actividades prácticas: 1
+# Actividad práctica: 1
 1. Creación DB lista.
 2. .env listo.
 3. Base del código lista.
@@ -23,24 +23,24 @@ El problema es asignar los productos hacia un usuario, se debería hacer por ref
 
 **db > models > controllers > routes**
 
-models : Definimos los modelos de la base de datos (Tipos de datos)
-controllers: Definimos funciones (CRUD, GET,POST, DELETE, PUT)
-routes: Definimos las rutas
+- **db**: Base de datos
+- **models:** Definimos los modelos de la base de datos (Tipos de datos)
+- **controllers:** Definimos funciones **(CRUD, GET,POST, DELETE, PUT)**
+- **routes:** Definimos las rutas
 
--------------
+**models:** server.ts , se encarga de importar varias cosas, entre ello, las rutas.
+**controllers:** seed.ts , carga los datos (usuarios)
 
-models: server.ts se encarga de importar varias cosas, entre ello, las rutas
-controllers: seed.ts 
-
-Conclusión no se creó una ruta para /api/usuarios/2/productos/{id}
-Pero se creó una ruta para /api/productos para desplegar productos
+Conclusión no se creó una ruta para **/api/usuarios/2/productos/{id}**
+Pero se creó una ruta para **/api/productos** para desplegar productos
 
 ----------------------------------------------------
 
-# Actividades prácticas: 2
+# Actividad práctica: 2
 
-Crear archivo docker para 'dockerizar' la app antes planteada
+Crear archivo docker para `dockerizar` la **API REST** y ejecutarla con:
 
-Correr docker
+```bash
+  docker compose up
+```
 
-docker compose up
