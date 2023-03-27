@@ -1,14 +1,15 @@
+# Actividades prácticas: 1
 1. Creación DB lista.
 2. .env listo.
 3. Base del código lista.
 
--- Primer problema -- 
+## -- Primer problema -- 
 
 Buscar las rutas > models > server.ts
 http://localhost:8000/seed
 http://localhost:8000/api/usuarios/2
 
--- Segundo problema --
+## -- Segundo problema --
 
 Cómo añadir una ruta para
 http://localhost:8000/api/usuarios/2/productos
@@ -17,8 +18,10 @@ http://localhost:8000/api/productos
 
 Para ello creo que se debe crear un nuevo modelo y añadirlo a la base de datos. Llamado 'productos' y 'usuario_producto' respectivamente.
 El problema es asignar los productos hacia un usuario, se debería hacer por referencia, pero no sé cómo hacerlo.
+
 -------------
-db > models > controllers > routes 
+
+**db > models > controllers > routes**
 
 models : Definimos los modelos de la base de datos (Tipos de datos)
 controllers: Definimos funciones (CRUD, GET,POST, DELETE, PUT)
@@ -34,8 +37,10 @@ Pero se creó una ruta para /api/productos para desplegar productos
 
 ----------------------------------------------------
 
-Correr docker
+# Actividades prácticas: 2
 
-docker image rm a9
+Crear archivo docker para 'dockerizar' la app antes planteada
+
+Correr docker
 
 docker compose up
