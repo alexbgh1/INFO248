@@ -1,0 +1,7 @@
+node_modules/
+mariaDB/
+dist/
+
+.template.env
+.git
+.gitignore
