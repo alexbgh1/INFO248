@@ -25,8 +25,8 @@ export class AdapterTemperatura extends Clima {
   }
 }
 
-// Clase que tendrá la temperatura
-export class Temperatura {
+// Clase que tendrá la temperatura Fahrenheit
+export class TemperaturaFahrenheit {
   private temperatura: Number = 86;
 
   getTemperatura(): Number {

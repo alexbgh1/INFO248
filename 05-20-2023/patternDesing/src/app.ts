@@ -12,7 +12,7 @@ import {
 import {
   AdapterTemperatura,
   ClimaInterface,
-  Temperatura,
+  TemperaturaFahrenheit,
 } from "./PatternDesign/Adapter/Example";
 
 import {
@@ -52,8 +52,7 @@ function singletonPattern() {
 
 function adapterPattern() {
   // Tiene la temperatura en Fahrenheit
-  const temperatura = new Temperatura();
-
+  const temperatura = new TemperaturaFahrenheit();
   const adapter = new ClimaInterface();
   const clima = new AdapterTemperatura(adapter);
 
@@ -95,12 +94,12 @@ function strategyPattern() {
 
 function main() {
   console.log(" Patrones de diseño! ");
+  // adapterPattern();
   factoryPattern();
-  facadePattern();
-  singletonPattern();
-  builderPattern();
-  adapterPattern();
-  strategyPattern();
+  // facadePattern();
+  // singletonPattern();
+  // builderPattern();
+  // strategyPattern();
 }
 
 // call main
